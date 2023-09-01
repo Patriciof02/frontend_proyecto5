@@ -5,6 +5,7 @@ import { UserContext } from "../context/user/userContext"
 import { types } from "../context/user/userReducer"
 import jwt from "jwt-decode"
 import axios from "axios"
+import { NavLink } from "react-router-dom"
 
 
 export const LoginPage = () => {
@@ -64,15 +65,19 @@ export const LoginPage = () => {
 
  return (
     <>
-    <h1>LoginPage</h1>
-    <form onSubmit={handleSubmit}>
+    <div class="caja1">
+  <div class="login" >
+    <h1>Login</h1>
+    <form  onSubmit={handleSubmit}>
         <label htmlFor="mail">Email</label>
         <input type="email" id="mail" name="mail"onChange={handleChange}/>
         <label htmlFor="pass">Password</label>
         <input type="password" id="pass" name="pass" onChange={handleChange}/>
         <button type="submit" disabled={isLoading}>{isLoading?'Cargando...':'Ingresar'}</button>
+        <NavLink to="/register">Register</NavLink>
     </form>
-      
+    </div>
+    </div>
     </>
 
  )}
