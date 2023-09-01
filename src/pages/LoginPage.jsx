@@ -65,8 +65,8 @@ export const LoginPage = () => {
 
  return (
     <>
-    <div class="caja1">
-  <div class="login" >
+    <div className="caja1">
+  <div className="login" >
     <h1>Login</h1>
     <form  onSubmit={handleSubmit}>
         <label htmlFor="mail">Email</label>
