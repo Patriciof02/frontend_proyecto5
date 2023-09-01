@@ -31,7 +31,7 @@ export const NavBar = () => {
             navbarScroll
           >
             <Nav.Link href="/">home</Nav.Link>
-            <Nav.Link href="#action2">Link</Nav.Link>
+            <Nav.Link href="/login">Login</Nav.Link>
             <NavDropdown title="Productos" id="navbarScrollingDropdown">
               <NavDropdown.Item href="#action3">Palas</NavDropdown.Item>
               <NavDropdown.Item href="#action4">
@@ -54,7 +54,7 @@ export const NavBar = () => {
               aria-label="Search"
             />
             <Button variant="outline-success">Search</Button>
-            <Button variant="outline-success" href="/login" className="ms-3">login</Button>
+            <Button  href="/login" className="ms-3">login</Button>
           </Form>
         </Navbar.Collapse>
       </Container>
