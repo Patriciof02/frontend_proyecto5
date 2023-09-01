@@ -5,21 +5,23 @@ import Form from 'react-bootstrap/Form';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
+import { NavLink } from 'react-router-dom';
 
 
 
 export const NavBar = () => {
     return (
-//         <nav>
-//             <NavLink to="/">Home</NavLink>
-//             <NavLink to="/login">Login</NavLink>
-//             <NavLink to="/register">Register</NavLink>
 
 
-// </nav>
+
+     <nav>      
+    {/* <nav>
+            <NavLink to="/">Home</NavLink>
+            <NavLink to="/login">Login</NavLink>
+            <NavLink to="/register">Register</NavLink>
 
 
-     <nav>
+   </nav> */}
     <Navbar expand="lg" className="bg-body-tertiary">
       <Container fluid>
         <Navbar.Brand href="#">Tienda Padel</Navbar.Brand>
@@ -54,7 +56,7 @@ export const NavBar = () => {
               aria-label="Search"
             />
             <Button variant="outline-success">Search</Button>
-            <Button  href="/login" className="ms-3">login</Button>
+            <Button variant="outline-success" className="ms-3"><NavLink to="/login">Login</NavLink></Button>
           </Form>
         </Navbar.Collapse>
       </Container>
