@@ -18,7 +18,9 @@ export const RegisterPage = () => {
     const initialUser = {
         username:"",
         pass:"",
-        mail:""
+        mail:"",
+        phone:"",
+        adress:""
 
     }
     const [formUser, setFormUser] = useState(initialUser)
@@ -63,7 +65,9 @@ export const RegisterPage = () => {
         
     return (
         <>
-        <h1>RegisterPage</h1>
+        <div className="caja1">
+        <div className="formulario1" >
+        <h1>Register</h1>
         <form onSubmit={handleSubmit}>
             <label htmlFor="username">Username</label>
             <input type="text" id="username" name="username" onChange={handleChange}/>
@@ -71,9 +75,14 @@ export const RegisterPage = () => {
             <input type="email" id="mail" name="mail" onChange={handleChange}/>
             <label htmlFor="pass">Password</label>
             <input type="password" id="pass" name="pass" onChange={handleChange}/>
+            <label htmlFor="phone">Phone</label>
+            <input type="text" id="phone" name="phone" onChange={handleChange}/>
+            <label htmlFor="adress">Adress</label>
+            <input type="text" id="adress" name="adress" onChange={handleChange}/>
             <button type="submit" disabled={isLoading}>Register</button>
+            
         </form>
-          
-        </>
-    
+          </div>
+        </div>
+    </>
      )}

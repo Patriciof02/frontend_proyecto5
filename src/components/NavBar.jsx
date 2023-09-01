@@ -5,7 +5,11 @@ import Form from 'react-bootstrap/Form';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
+import Image from 'react-bootstrap/Image';
 import { NavLink } from 'react-router-dom';
+import DropdownButton from 'react-bootstrap/DropdownButton';
+import Dropdown from 'react-bootstrap/Dropdown';
+
 
 
 
@@ -32,20 +36,20 @@ export const NavBar = () => {
             style={{ maxHeight: '100px' }}
             navbarScroll
           >
-            <Nav.Link href="/">home</Nav.Link>
-            <Nav.Link href="/login">Login</Nav.Link>
+            <NavLink to="/"  className="NavLink ">home</NavLink>
+            <Nav.Link to="/login">Login</Nav.Link>
             <NavDropdown title="Productos" id="navbarScrollingDropdown">
-              <NavDropdown.Item href="#action3">Palas</NavDropdown.Item>
-              <NavDropdown.Item href="#action4">
+              <NavDropdown.Item >Palas</NavDropdown.Item>
+              <NavDropdown.Item >
                Accesorios
               </NavDropdown.Item>
               <NavDropdown.Divider />
               <NavDropdown.Item href="#action5">
-                tokenDecodificado
+                Mostrar todo
               </NavDropdown.Item>
             </NavDropdown>
             <Nav.Link href="#" disabled>
-              Link
+              Administrador
             </Nav.Link>
           </Nav>
           <Form className="d-flex " >
@@ -56,7 +60,30 @@ export const NavBar = () => {
               aria-label="Search"
             />
             <Button variant="outline-success">Search</Button>
-            <Button variant="outline-success" className="ms-3"><NavLink to="/login">Login</NavLink></Button>
+
+            <Dropdown className="custom-dropdown">
+      <Dropdown.Toggle className="ms-3 " variant="success" id="dropdown-basic">
+      <div style={{ display: 'flex', alignItems: 'center' }}>
+            <Image
+              src="/usericon2.png" // Reemplaza con la ruta de tu imagen
+              alt="Icono de acceso"
+              width={20} // Ajusta el ancho de la imagen según tus necesidades
+              height={20} // Ajusta la altura de la imagen según tus necesidades
+              className="" // Agrega margen derecho para separar la imagen del texto
+            />
+            </div>
+      </Dropdown.Toggle>
+
+      <Dropdown.Menu    align="end"
+      title="Dropdown end"
+      id="dropdown-menu-align-end">
+        <Dropdown.Item><NavLink to="/login">login</NavLink></Dropdown.Item>
+        <Dropdown.Item><NavLink to="/register">Register</NavLink></Dropdown.Item>
+        <NavDropdown.Divider />
+        <Dropdown.Item >Cerrar sesion</Dropdown.Item>
+      </Dropdown.Menu>
+    </Dropdown>
+  
           </Form>
         </Navbar.Collapse>
       </Container>
