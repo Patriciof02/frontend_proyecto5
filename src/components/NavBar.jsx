@@ -30,8 +30,8 @@ export const NavBar = () => {
             style={{ maxHeight: '100px' }}
             navbarScroll
           >
-            <Nav.Link href="/">home</Nav.Link>
-            <Nav.Link href="/login">Login</Nav.Link>
+            <Nav.Link to="/">home</Nav.Link>
+            <Nav.Link to="/login">Login</Nav.Link>
             <NavDropdown title="Productos" id="navbarScrollingDropdown">
               <NavDropdown.Item href="#action3">Palas</NavDropdown.Item>
               <NavDropdown.Item href="#action4">
