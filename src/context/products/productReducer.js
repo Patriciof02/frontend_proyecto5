@@ -8,7 +8,7 @@ const productReducer = (state, action = {}) => {
         case types.setProductState:
         return {
             ...state,
-            user: action.payload,
+            product: action.payload,
 
         }
         case types.setError:

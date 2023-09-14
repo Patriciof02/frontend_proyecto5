@@ -36,8 +36,8 @@ export const NavBar = () => {
             style={{ maxHeight: '100px' }}
             navbarScroll
           >
-            <NavLink to="/"  className="NavLink ">home</NavLink>
-            <Nav.Link to="/login">Login</Nav.Link>
+            <NavLink to="/"  className="nav-link">home</NavLink>
+            <NavLink to="/login" className="nav-link">Login</NavLink>
             <NavDropdown title="Productos" id="navbarScrollingDropdown">
               <NavDropdown.Item >Palas</NavDropdown.Item>
               <NavDropdown.Item >
@@ -48,9 +48,9 @@ export const NavBar = () => {
                 Mostrar todo
               </NavDropdown.Item>
             </NavDropdown>
-            <Nav.Link href="#" disabled>
-              Administrador
-            </Nav.Link>
+            
+            <NavLink to="/admin"  className="nav-link">Administrador</NavLink>
+            
           </Nav>
           <Form className="d-flex " >
             <Form.Control
@@ -77,8 +77,8 @@ export const NavBar = () => {
       <Dropdown.Menu    align="end"
       title="Dropdown end"
       id="dropdown-menu-align-end">
-        <Dropdown.Item><NavLink to="/login">login</NavLink></Dropdown.Item>
-        <Dropdown.Item><NavLink to="/register">Register</NavLink></Dropdown.Item>
+        <Dropdown.Item><NavLink to="/login" className={"nav-link"}>login</NavLink></Dropdown.Item>
+        <Dropdown.Item><NavLink to="/register" className={"nav-link"}>Register</NavLink></Dropdown.Item>
         <NavDropdown.Divider />
         <Dropdown.Item >Cerrar sesion</Dropdown.Item>
       </Dropdown.Menu>

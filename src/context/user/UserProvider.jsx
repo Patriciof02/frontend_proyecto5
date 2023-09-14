@@ -1,5 +1,5 @@
 /* eslint-disable react/prop-types */
-import {UserContext} from "../user/userContext"
+import {UserContext} from "../user/UserContext"
 import {useReducer} from 'react'
 import userReducer from './userReducer'
 

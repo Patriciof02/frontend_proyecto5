@@ -1,10 +1,10 @@
-import {ProductContext} from "../products/ProductContext"
+import { ProductContext } from './productContext'
 import {useReducer} from 'react'
-import userReducer from './productReducer'
+import productReducer from './productReducer'
 
 export const ProductProvider = ({children}) => {
 
-  const [state, dispatch] = useReducer(ProductReducer, null)
+  const [state, dispatch] = useReducer(productReducer, null)
 
   return (
     <ProductContext.Provider value={[state, dispatch]} >
