@@ -7,6 +7,7 @@ import {types} from "../context/products/productReducer"
 import axios from "axios"
 import Dropzone from "dropzone"
 
+
 export const RegisterProducts = () => {
 
     const [isLoading,setIsLoading] = useState(false)
