@@ -57,7 +57,7 @@ export const RegisterProducts = () => {
                 type: types.setError,
                 payload:error
             })
-            setIsLoading(false)
+            setIsLoading(false) 
            }
          }
         

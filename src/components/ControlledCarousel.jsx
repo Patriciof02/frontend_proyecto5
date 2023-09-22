@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import Carousel from 'react-bootstrap/Carousel';
+import Image from 'react-bootstrap/Image';
 // import ExampleCarouselImage from '../assets/PadelImage.jpg';
 
 export function ControlledCarousel() {
@@ -11,38 +12,38 @@ export function ControlledCarousel() {
 
   return (
     <Carousel activeIndex={index} onSelect={handleSelect}>
-      <Carousel.Item>
+      <Carousel.Item fluid>
         < img
-    className="d-block w-100"
-    src="/PadelImage.jpg" // Usar la imagen importada
+    className="d-block w-100 h-fluid"
+    src="/PadelImage1.jpg"  // Usar la imagen importada
     alt="First slide"
    text="First slide" />
         <Carousel.Caption>
-          <h3>First slide label</h3>
-          <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+          <h3>El mejor equipamento</h3>
+          <p>Todo lo que buscas en un solo lugar</p>
         </Carousel.Caption>
       </Carousel.Item>
-      <Carousel.Item>
+      <Carousel.Item fluid>
         < img
-    className="d-block w-100"
-    src="/PadelImage.jpg" // Usar la imagen importada
+    className="d-block w-100 h-fluid"
+    src="/PadelImage2.jpg" // Usar la imagen importada
     alt="First slide"
    text="Second slide" />
         <Carousel.Caption>
-          <h3>Second slide label</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          <h3>las mejores canchas</h3>
+          <p>Informacion sobre los mejores lugares para jugar</p>
         </Carousel.Caption>
       </Carousel.Item>
-      <Carousel.Item>
+      <Carousel.Item fluid>
         < img
-    className="d-block w-100"
-    src="/PadelImage.jpg" // Usar la imagen importada
+    className="d-block w-100 h-fluid"
+    src="/PadelImage3.jpg"  // Usar la imagen importada
     alt="First slide"
     text="Third slide" />
         <Carousel.Caption>
-          <h3>Third slide label</h3>
+          <h3>Los mejores accesorios</h3>
           <p>
-            Praesent commodo cursus magna, vel scelerisque nisl consectetur.
+            Todo lo que necesitas para jugar
           </p>
         </Carousel.Caption>
       </Carousel.Item>

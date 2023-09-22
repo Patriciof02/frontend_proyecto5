@@ -7,7 +7,7 @@ import jwt from "jwt-decode"
 import {types} from "../context/user/userReducer"
 import axios from "axios"
 
-export const RegisterPageAdmin = () => {
+export const UserAdmin = () => {
 
     const [isLoading,setIsLoading] = useState(false)
 

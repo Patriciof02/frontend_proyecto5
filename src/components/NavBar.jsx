@@ -48,8 +48,19 @@ export const NavBar = () => {
                 Mostrar todo
               </NavDropdown.Item>
             </NavDropdown>
+            <NavDropdown title="Administrador" id="navbarScrollingDropdown">
+              <NavDropdown.Item >
+              <NavLink to="/adminUsers"  className="nav-link">Usuarios</NavLink>
+                </NavDropdown.Item>
+              <NavDropdown.Divider />
+              <NavDropdown.Item >
+              <NavLink to="/adminProducts"  className="nav-link">Productos</NavLink>
+              </NavDropdown.Item>
+              
             
-            <NavLink to="/admin"  className="nav-link">Administrador</NavLink>
+            </NavDropdown>
+            
+           
             
           </Nav>
           <Form className="d-flex " >

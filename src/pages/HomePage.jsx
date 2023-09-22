@@ -1,6 +1,7 @@
 import {useContext} from "react"
 import { UserContext } from "../context/user/UserContext"
 import {ControlledCarousel} from "../components/ControlledCarousel"
+import { ProductsShowRoom } from "../components/ProductsShowRoom"
 
 
 export const HomePage = () => {
@@ -29,6 +30,9 @@ export const HomePage = () => {
             <p>Ingresa tu correo electrónico para que podamos contactarnos y ver como ayudarte a mejorar tu equipo y asesorarte con las mejores opciones que tenemos para ti.</p>
            
         </div>
+    </section>
+    <section>
+        <ProductsShowRoom/>
     </section>
 
 

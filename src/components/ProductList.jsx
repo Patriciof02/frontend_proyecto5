@@ -3,6 +3,7 @@ import React, { useState, useEffect, useContext} from 'react';
 import axios from 'axios';
 import { ProductContext } from '../context/products/productContext';
 import jwt from "jwt-decode"
+import Table from 'react-bootstrap/Table';
 
 export const ProductList = () => {
   
@@ -72,40 +73,56 @@ console.log(products)
   
     const renderProductRows = () => {
       return products.map((product) => (
-        <tr key={product.id}>
+        <tr key={product._id}>
           <td>{product.productname}</td>
           <td>{product.image}</td>
           <td>{product.price}</td>
           <td>{product.description}</td>
+          <td>
 
           <button onClick={() => handleEdit(product._id)}>Editar</button>
           <button onClick={() => handleDelete(product._id)}>Eliminar</button>
-         
+         </td>
         </tr>
       ));
     };
 
   return (
     <div>
-      <div></div>
+      
       <h1>Lista de Productos</h1>
       {isLoading ? (
         <p>Cargando Productos...</p>
       ) : error ? (
         <p>Error al cargar los Productos.</p>
       ) : (
-        <table>
-          <thead>
-            <tr>
-              <th>productname</th>
-              <th>image</th>
-              <th>price</th>
-              <th>description</th>
+        // <table>
+        //   <thead>
+        //     <tr>
+        //       <th>productname</th>
+        //       <th>image</th>
+        //       <th>price</th>
+        //       <th>description</th>
 
-            </tr>
-          </thead>
-          <tbody>{renderProductRows()}</tbody>
-        </table>
+        //     </tr>
+        //   </thead>
+        //   <tbody>{renderProductRows()}</tbody>
+        // </table>
+
+        <Table striped bordered hover>
+        <thead>
+        <tr>
+        <th>productname</th>
+        <th>image</th>
+        <th>price</th>
+        <th>description</th>
+        <th>Acciones</th>
+        </tr>
+        </thead>
+        <tbody>
+       {renderProductRows()}
+        </tbody>
+        </Table>
       )}
     </div>
   );
