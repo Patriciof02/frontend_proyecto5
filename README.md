@@ -6,6 +6,6 @@ se realizo una pagina donde se pueden modificar tanto los productos como los usu
 ## Tecnologias utilizadas
 para realizar esta pagina se utilizo mongo, express, react Y nodejs
 ## Prototipado Simple
-![PrototipadoSimple](./assets/images/prototipadoSimple.png)
+![PrototipadoSimple](./public/prototipadoSimple.png)
 
 [link](proyecto5e-commerce.netlify.app/)
