@@ -1,7 +1,7 @@
 import {useState} from "react"
 import {useNavigate} from "react-router-dom"
 import { useContext } from "react"
-import { UserContext } from "../context/user/UserContext"
+import  UserContext  from "../context/user/UserContext"
 import { types } from "../context/user/userReducer"
 import jwt from "jwt-decode"
 import axios from "axios"

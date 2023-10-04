@@ -1,5 +1,5 @@
 import {useContext} from "react"
-import { UserContext } from "../context/user/UserContext"
+import  UserContext  from "../context/user/UserContext"
 import {ControlledCarousel} from "../components/ControlledCarousel"
 import { ProductsShowRoom } from "../components/ProductsShowRoom"
 
