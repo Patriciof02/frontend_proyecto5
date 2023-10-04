@@ -19,11 +19,6 @@ export const NavBar = () => {
 
 
      <nav>      
-    {/* <nav>
-            <NavLink to="/">Home</NavLink>
-            <NavLink to="/login">Login</NavLink>
-            <NavLink to="/register">Register</NavLink>
-
 
    </nav> */}
     <Navbar expand="lg" className="bg-body-tertiary">
