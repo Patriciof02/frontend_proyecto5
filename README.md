@@ -1,11 +1,11 @@
 # React + Vite
-# Proyecto 1 landing de ventas
-Para el primer proyecto realice una landing de ventas de equipo para jugar padel en especifico de Palas.
+# Proyecto 5 Aplicación FULLSTACK integrando MONGO, EXPRESS, REACT Y NODEJS
+Para este proyecto se realizo una pagina de e-commerce donde se pueden agregar usuarios y productos, tambien relizar compras.
 ## Descripcion basica
-se realizo una pagina principal sobre venta de palas de padel y otros equipamentos.
+se realizo una pagina donde se pueden modificar tanto los productos como los usuarios y seleccionar productos que despues se pueden comprar.
 ## Tecnologias utilizadas
-para relizar esta pagina se uso html y css junto con css flex 
+para realizar esta pagina se utilizo mongo, express, react Y nodejs
 ## Prototipado Simple
-![PrototipadoSimple](./assets/images/prototipadoSimpleProyecto1.png)
+![PrototipadoSimple](./assets/images/prototipadoSimple.png)
 
-[link](patriciof02.github.io/Proyecto1LandingDeVenta/)
+[link](proyecto5e-commerce.netlify.app/)
