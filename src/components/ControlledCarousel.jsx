@@ -11,10 +11,10 @@ export function ControlledCarousel() {
   };
 
   return (
-    <Carousel activeIndex={index} onSelect={handleSelect}>
+    <Carousel className="p-3 carrusel " activeIndex={index} onSelect={handleSelect}>
       <Carousel.Item >
         < img
-    className="d-block w-100 "
+    className="rounded-5 d-block w-100 "
     src="/PadelImage1.jpg"  // Usar la imagen importada
     alt="First slide"
    text="First slide" />
@@ -25,7 +25,7 @@ export function ControlledCarousel() {
       </Carousel.Item>
       <Carousel.Item >
         < img
-    className="d-block w-100 "
+    className="rounded-5 d-block w-100 "
     src="/PadelImage2.jpg" // Usar la imagen importada
     alt="First slide"
    text="Second slide" />
@@ -36,7 +36,7 @@ export function ControlledCarousel() {
       </Carousel.Item>
       <Carousel.Item >
         < img
-    className="d-block w-100 h-fluid"
+    className="rounded-5 d-block w-100 h-fluid"
     src="/PadelImage3.jpg"  // Usar la imagen importada
     alt="First slide"
     text="Third slide" />
