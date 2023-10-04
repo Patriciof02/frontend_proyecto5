@@ -1,4 +1,4 @@
-import { ProductContext } from './productContext'
+import  ProductContext  from "./ProductContext"
 import {useReducer} from 'react'
 import productReducer from './productReducer'
 

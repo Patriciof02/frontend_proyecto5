@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useContext } from 'react';
 import axios from 'axios';
-import { ProductContext } from '../context/products/productContext';
+import  ProductContext from "../context/products/ProductContext"
 import jwt from 'jwt-decode';
 import Table from 'react-bootstrap/Table';
 import Button from 'react-bootstrap/Button';
