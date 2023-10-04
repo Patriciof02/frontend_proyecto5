@@ -96,18 +96,6 @@ console.log(products)
       ) : error ? (
         <p>Error al cargar los Productos.</p>
       ) : (
-        // <table>
-        //   <thead>
-        //     <tr>
-        //       <th>productname</th>
-        //       <th>image</th>
-        //       <th>price</th>
-        //       <th>description</th>
-
-        //     </tr>
-        //   </thead>
-        //   <tbody>{renderProductRows()}</tbody>
-        // </table>
 
         <Table striped bordered hover>
         <thead>

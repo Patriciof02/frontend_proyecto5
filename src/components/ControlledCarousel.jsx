@@ -12,9 +12,9 @@ export function ControlledCarousel() {
 
   return (
     <Carousel activeIndex={index} onSelect={handleSelect}>
-      <Carousel.Item fluid>
+      <Carousel.Item >
         < img
-    className="d-block w-100 h-fluid"
+    className="d-block w-100 "
     src="/PadelImage1.jpg"  // Usar la imagen importada
     alt="First slide"
    text="First slide" />
@@ -23,9 +23,9 @@ export function ControlledCarousel() {
           <p>Todo lo que buscas en un solo lugar</p>
         </Carousel.Caption>
       </Carousel.Item>
-      <Carousel.Item fluid>
+      <Carousel.Item >
         < img
-    className="d-block w-100 h-fluid"
+    className="d-block w-100 "
     src="/PadelImage2.jpg" // Usar la imagen importada
     alt="First slide"
    text="Second slide" />
@@ -34,7 +34,7 @@ export function ControlledCarousel() {
           <p>Informacion sobre los mejores lugares para jugar</p>
         </Carousel.Caption>
       </Carousel.Item>
-      <Carousel.Item fluid>
+      <Carousel.Item >
         < img
     className="d-block w-100 h-fluid"
     src="/PadelImage3.jpg"  // Usar la imagen importada

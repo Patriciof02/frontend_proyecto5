@@ -16,11 +16,8 @@ import Dropdown from 'react-bootstrap/Dropdown';
 export const NavBar = () => {
     return (
 
-
-
      <nav>      
 
-   </nav> */}
     <Navbar expand="lg" className="bg-body-tertiary">
       <Container fluid>
         <Navbar.Brand href="#">Tienda Padel</Navbar.Brand>
@@ -33,24 +30,16 @@ export const NavBar = () => {
           >
             <NavLink to="/"  className="nav-link">home</NavLink>
             <NavLink to="/login" className="nav-link">Login</NavLink>
-            <NavDropdown title="Productos" id="navbarScrollingDropdown">
-              <NavDropdown.Item >Palas</NavDropdown.Item>
-              <NavDropdown.Item >
-               Accesorios
-              </NavDropdown.Item>
-              <NavDropdown.Divider />
-              <NavDropdown.Item href="#action5">
-                Mostrar todo
-              </NavDropdown.Item>
-            </NavDropdown>
+            <NavLink to="/products" className="nav-link">Productos</NavLink>
+       
             <NavDropdown title="Administrador" id="navbarScrollingDropdown">
-              <NavDropdown.Item >
+              
               <NavLink to="/adminUsers"  className="nav-link">Usuarios</NavLink>
-                </NavDropdown.Item>
+                
               <NavDropdown.Divider />
-              <NavDropdown.Item >
+              
               <NavLink to="/adminProducts"  className="nav-link">Productos</NavLink>
-              </NavDropdown.Item>
+              
               
             
             </NavDropdown>
