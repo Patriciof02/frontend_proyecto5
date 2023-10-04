@@ -72,8 +72,8 @@ export const NavBar = () => {
       <Dropdown.Menu    align="end"
       title="Dropdown end"
       id="dropdown-menu-align-end">
-        <Dropdown.Item><NavLink to="/login" className={"nav-link"}>login</NavLink></Dropdown.Item>
-        <Dropdown.Item><NavLink to="/register" className={"nav-link"}>Register</NavLink></Dropdown.Item>
+        <NavLink to="/login" className={"nav-link"}>login</NavLink>
+        <NavLink to="/register" className={"nav-link"}>Register</NavLink>
         <NavDropdown.Divider />
         <Dropdown.Item >Cerrar sesion</Dropdown.Item>
       </Dropdown.Menu>
