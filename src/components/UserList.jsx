@@ -74,6 +74,7 @@ console.log(users)
         <tr key={user._id}>
           <td>{user.username}</td>
           <td>{user.mail}</td>
+          <td>{user.adress}</td>
           <td>
           <button onClick={() => handleEdit(user._id)}>Editar</button>
           <button onClick={() => handleDelete(user._id)}>Eliminar</button>
@@ -105,6 +106,7 @@ console.log(users)
              <tr>
              <th>Username</th>
              <th>Email</th>
+            <th>Dirección</th> 
              <th>Acciones</th>
              </tr>
              </thead>
@@ -116,3 +118,4 @@ console.log(users)
     </div>
   );
 };
+

@@ -8,6 +8,7 @@ import Card from 'react-bootstrap/Card';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
+import { Link } from 'react-router-dom';
 
 export const ProductsShowRoom = () => {
   const [isLoading, setIsLoading] = useState(false);
@@ -49,7 +50,11 @@ export const ProductsShowRoom = () => {
             <Card.Text>
               {product.price}
             </Card.Text>
-            <Button variant="success" className='position-absolute bottom-0 end-0 m-2'>comprar</Button>{' '}
+            <Link to={`/product/${product._id}`}> {/* Enlace a la página de detalles del producto */}
+            <Button variant="success" className='position-absolute bottom-0 end-0 m-2'>
+              Comprar
+            </Button>
+          </Link>{' '}
           </Card.Body>
         </Card>
       </Col>

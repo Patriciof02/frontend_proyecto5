@@ -18,7 +18,8 @@ export const LoginPage = () => {
 
     const initialUser = {
         mail:"",
-        pass:""
+        pass:"",
+ 
     }
 
 
